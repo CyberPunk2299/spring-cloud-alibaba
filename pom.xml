@@ -162,6 +162,15 @@
                     <version>${jacoco.version}</version>
                 </plugin>
 
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <testFailureIgnore>true</testFailureIgnore>
+                    </configuration>
+                </plugin>
+
                 <!-- disable auto format from parent -->
                 <plugin>
                     <groupId>io.spring.javaformat</groupId>
